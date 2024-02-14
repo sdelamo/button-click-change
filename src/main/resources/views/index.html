@@ -10,8 +10,9 @@
         Hello World
     </div>
     <button
-            th:hx-get="@{/htmx}"
-            hx-target="#message">
+        th:hx-get="@{/htmx}"
+        th:hx-swap="outerHTML"
+        hx-target="#message">
         Click me
     </button>
 </main>
